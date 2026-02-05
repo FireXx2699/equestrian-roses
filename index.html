@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equestrian Rosés Gut & Gestüt</title>
+  <style>
+    :root {
+      --rose: #b76e79;
+      --dark: #2b2b2b;
+      --light: #f7f5f3;
+      --accent: #8c4a55;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Georgia', serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('bilder/hero.jpg') center/cover no-repeat;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 3rem; letter-spacing: 2px; }
+    header p { margin-top: 1rem; font-style: italic; font-size: 1.2rem; }
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: bold;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h2 {
+      color: var(--rose);
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Equestrian Rosés</h1>
+  <p>Eleganz. Vertrauen. Harmonie zwischen Mensch & Pferd.</p>
+</header>
+
+<nav>
+  <a href="#gut">Gut & Gestüt</a>
+  <a href="#einstell">Einstellplätze</a>
+  <a href="#club">Club</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="gut">
+  <h2>Das Landgut – Equestrian Rosés</h2>
+  <p>
+    Eingebettet in eine weitläufige Landschaft bietet unser Gut realistische
+    Pferdehaltung mit viel Liebe zum Detail.
+  </p>
+</section>
+
+<section id="einstell">
+  <h2>Einstellmöglichkeiten</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="bilder/koppeln.jpg" alt="Koppeln">
+      <h3>Weidehaltung</h3>
+      <p>Großzügige Koppeln und ruhige Herden.</p>
+    </div>
+    <div class="card">
+      <img src="bilder/boxen.jpg" alt="Boxen">
+      <h3>Boxenhaltung</h3>
+      <p>Helle Boxen mit individueller Pflege.</p>
+    </div>
+    <div class="card">
+      <img src="bilder/anlage.jpg" alt="Anlage">
+      <h3>Anlage</h3>
+      <p>Reitplätze & Versorgungsbereiche.</p>
+    </div>
+  </div>
+</section>
+
+<section id="club">
+  <h2>Equestrian Roses – Der Club</h2>
+  <p>
+    Ein realistischer RP-Club im Aufbau.
+  </p>
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <p>RP-interne Bewerbung.</p>
+</section>
+
+<footer>
+  <p>© Equestrian Rosés Gut & Gestüt</p>
+</footer>
+
+</body>
+</html>
