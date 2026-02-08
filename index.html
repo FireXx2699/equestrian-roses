@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Equestrian Rosés Gut & Gestüt</title>
+
   <style>
     :root {
       --rose: #b76e79;
@@ -11,21 +12,34 @@
       --light: #f7f5f3;
       --accent: #8c4a55;
     }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: 'Georgia', serif;
       background: var(--light);
       color: var(--dark);
       line-height: 1.6;
     }
+
     header {
       background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('bilder/hero.jpg') center/cover no-repeat;
       color: white;
       padding: 6rem 2rem;
       text-align: center;
     }
-    header h1 { font-size: 3rem; letter-spacing: 2px; }
-    header p { margin-top: 1rem; font-style: italic; font-size: 1.2rem; }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 1rem;
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
     nav {
       background: white;
       display: flex;
@@ -34,37 +48,64 @@
       padding: 1rem;
       border-bottom: 1px solid #ddd;
     }
+
     nav a {
       text-decoration: none;
       color: var(--dark);
       font-weight: bold;
     }
+
     section {
       padding: 4rem 2rem;
       max-width: 1200px;
       margin: auto;
     }
+
     section h2 {
       color: var(--rose);
       margin-bottom: 1.5rem;
       font-size: 2rem;
     }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
+
     .card {
       background: white;
       padding: 2rem;
       border-radius: 12px;
       box-shadow: 0 10px 30px rgba(0,0,0,.08);
     }
+
+    /* Galerie für mehrere Bilder */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform .2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
     img {
       width: 100%;
       border-radius: 10px;
       margin-bottom: 1rem;
     }
+
     footer {
       background: var(--dark);
       color: white;
@@ -74,6 +115,7 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -98,7 +140,10 @@
 
 <section id="einstell">
   <h2>Einstellmöglichkeiten</h2>
+
   <div class="grid">
+
+    <!-- Weide -->
     <div class="card">
       <div class="gallery">
         <img src="bilder/koppeln1.jpg" alt="Koppeln">
@@ -108,32 +153,35 @@
       <h3>Weidehaltung</h3>
       <p>Großzügige Koppeln und ruhige Herden.</p>
     </div>
+
+    <!-- Boxen -->
     <div class="card">
-  <div class="gallery">
-    <img src="bilder/boxen1.jpg" alt="Boxen">
-    <img src="bilder/boxen2.jpg" alt="Boxen">
-    <img src="bilder/boxen3.jpg" alt="Boxen">
-  </div>
-  <h3>Boxenhaltung</h3>
-  <p>Helle Boxen mit individueller Pflege.</p>
-</div>
- div class="card">
-  <div class="gallery">
-    <img src="bilder/anlage1.jpg" alt="Anlage">
-    <img src="bilder/anlage2.jpg" alt="Anlage">
-    <img src="bilder/anlage3.jpg" alt="Anlage">
-  </div>
-  <h3>Anlage</h3>
-  <p>Reitplätze & Versorgungsbereiche.</p>
-</div>
+      <div class="gallery">
+        <img src="bilder/boxen1.jpg" alt="Boxen">
+        <img src="bilder/boxen2.jpg" alt="Boxen">
+        <img src="bilder/boxen3.jpg" alt="Boxen">
+      </div>
+      <h3>Boxenhaltung</h3>
+      <p>Helle Boxen mit individueller Pflege.</p>
+    </div>
+
+    <!-- Anlage -->
+    <div class="card">
+      <div class="gallery">
+        <img src="bilder/anlage1.jpg" alt="Anlage">
+        <img src="bilder/anlage2.jpg" alt="Anlage">
+        <img src="bilder/anlage3.jpg" alt="Anlage">
+      </div>
+      <h3>Anlage</h3>
+      <p>Reitplätze & Versorgungsbereiche.</p>
+    </div>
+
   </div>
 </section>
 
 <section id="club">
   <h2>Equestrian Roses – Der Club</h2>
-  <p>
-    Ein realistischer RP-Club im Aufbau.
-  </p>
+  <p>Ein realistischer RP-Club im Aufbau.</p>
 </section>
 
 <section id="kontakt">
